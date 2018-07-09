@@ -3,7 +3,7 @@
 
 your_favorite_word = "hegemony"
 
-puts "My favorite word is #{hegemony}"
+puts "My favorite word is #{your_favorite_word}"
 
 # Challenge 2: Capitalize every letter in your_favorite_word using a built in Ruby method
 
@@ -23,7 +23,7 @@ puts lowercased_phrase
 
 big_word = "supercalifragilisticexpialidocious".length
 
-letter_count = big_word # Put a . after big_word and use a String method.
+letter_count = big_word.length # Put a . after big_word and use a String method.
 
 puts "There are #{letter_count} in #{big_word}"
 
@@ -46,6 +46,6 @@ sentence = "Astounding aardvarks, arguably an ancient animal, always ate apples 
 
 # Swap all `A` for `O`, as well as all `a` for `o`. You need to chain `gsub`s.
 
-sentence = sentence.gsub ""Astounding aardvarks, arguably an ancient animal, always ate apples and acorns and artichokes all around Athens, amazing!"" # Add your gsub chain here
+sentence = sentence.gsub("A","O").gsub ("a", "o")
 
 puts sentence
